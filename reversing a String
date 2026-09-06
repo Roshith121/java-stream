@@ -1,0 +1,9 @@
+public class StreamPractice {
+
+    public static void main(String[] args) {
+        List<String> names = List.of("Roshith","Om","Jijay","Vj");
+        List<String> reverse = names.stream().map(e->new StringBuilder(e).reverse().toString()).filter(e->e.length()>3).collect(Collectors.toList());
+        System.out.print(reverse);
+
+    }
+}
